@@ -28,6 +28,8 @@ public class TaskService {
 
     public TaskDto getTaskById(Integer id){
         AtomicReference<TaskDto> dto = new AtomicReference<>();
-        return null;
+        //taskRepository.findById(id).isPresent(task -> dto.set(taskMapper.entityToDto(task)));
+
+        return dto.get();
     }
 }
